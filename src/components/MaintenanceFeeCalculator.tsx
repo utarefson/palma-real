@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from './MaintenanceFeeCalculator.module.css';
 
 export function MaintenanceFeeCalculator() {
+  const { t } = useTranslation();
   const TOTAL_BUILT_UP_AREA = parseFloat(import.meta.env.VITE_TOTAL_BUILT_UP_AREA || '10000');
   const PAINTING_PRICE = parseFloat(import.meta.env.VITE_PAINTING_PRICE || '300000');
 
@@ -24,11 +26,11 @@ export function MaintenanceFeeCalculator() {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <h2 className={styles.title}>Impermeabilizaci&oacute;n y Pintado Exterior del Palma Real</h2>
+        <h2 className={styles.title}>{t('calculator.title')}</h2>
 
         <div className={styles.inputGroup}>
           <label htmlFor="area" className={styles.label}>
-            Metros Cuadrados del Departamento
+            {t('calculator.label')}
           </label>
           <div className={styles.inputWrapper}>
             <input
@@ -36,7 +38,7 @@ export function MaintenanceFeeCalculator() {
               type="number"
               value={area}
               onChange={handleInputChange}
-              placeholder="Ingrese el area en m²"
+              placeholder={t('calculator.placeholder')}
               className={styles.input}
               min="0"
               step="0.01"
@@ -48,10 +50,10 @@ export function MaintenanceFeeCalculator() {
         {result !== null && (
           <div className={styles.resultContainer}>
             <div className={styles.resultBox}>
-              <p className={styles.resultLabel}>Cuota Extraordinaria:</p>
+              <p className={styles.resultLabel}>{t('calculator.resultLabel')}</p>
               <p className={styles.resultAmount}>Bs. {result.toFixed(2)}</p>
               <p className={styles.resultInfo}>
-                Monto calculado para {area} m² de superficie.
+                {t('calculator.resultInfo', { area })}
               </p>
             </div>
           </div>

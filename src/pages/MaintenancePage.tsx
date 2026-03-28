@@ -1,10 +1,13 @@
+import { useTranslation } from 'react-i18next';
 import { PagePlaceholder } from '../components/PagePlaceholder';
 
 export function MaintenancePage() {
+  const { t } = useTranslation();
+
   return (
     <PagePlaceholder
-      title="Maintenance"
-      description="Schedule, track, and manage maintenance requests and repairs."
+      title={t('pages.maintenance')}
+      description={t('navbar.maintenance')}
     />
   );
 }

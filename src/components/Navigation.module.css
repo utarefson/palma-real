@@ -23,10 +23,17 @@
   color: var(--color-primary);
   white-space: nowrap;
   text-decoration: none;
+  margin-right: 2rem;
 }
 
 .logo:hover {
   color: var(--color-primary-dark);
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .toggle {

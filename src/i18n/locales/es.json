@@ -1,0 +1,47 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "landlords": "Propietarios",
+    "apartments": "Apartamentos",
+    "parking": "Estacionamiento",
+    "pets": "Mascotas",
+    "maintenance": "Mantenimiento",
+    "expenses": "Gastos",
+    "specialAssessments": "Cuotas"
+  },
+  "home": {
+    "title": "Bienvenido a Palma Real",
+    "subtitle": "Sistema de Gestión de Propiedades para Propietarios, Apartamentos e Inquilinos",
+    "getStarted": "Comenzar",
+    "getStartedDescription": "Selecciona una sección del menú de navegación superior para comenzar a gestionar tus propiedades.",
+    "features": {
+      "landlords": "Gestiona la información y perfiles de los propietarios",
+      "apartments": "Maneja listados de apartamentos y detalles de propiedades",
+      "parking": "Gestiona espacios de estacionamiento y asignaciones",
+      "pets": "Realiza seguimiento de políticas de mascotas e inquilinos",
+      "maintenance": "Programa y realiza seguimiento de solicitudes de mantenimiento",
+      "expenses": "Monitorea y gestiona los gastos de la propiedad",
+      "specialAssessments": "Realiza seguimiento de cuotas extraordinarias y tarifas"
+    }
+  },
+  "pages": {
+    "landlords": "Propietarios",
+    "apartments": "Apartamentos",
+    "parking": "Estacionamiento",
+    "pets": "Mascotas",
+    "maintenance": "Mantenimiento",
+    "expenses": "Gastos",
+    "specialAssessments": "Cuotas Extraordinarias",
+    "underConstruction": "Esta página está en construcción."
+  },
+  "calculator": {
+    "title": "Impermeabilización y Pintado Exterior del Palma Real",
+    "label": "Metros Cuadrados del Departamento",
+    "placeholder": "Ingrese la superficie en m²",
+    "resultLabel": "Cuota Extraordinaria:",
+    "resultInfo": "Monto calculado para {{area}} m² de superficie."
+  },
+  "footer": {
+    "copyright": "© {{year}} Palma Real. Todos los derechos reservados."
+  }
+}

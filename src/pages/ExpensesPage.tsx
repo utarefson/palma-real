@@ -1,10 +1,13 @@
+import { useTranslation } from 'react-i18next';
 import { PagePlaceholder } from '../components/PagePlaceholder';
 
 export function ExpensesPage() {
+  const { t } = useTranslation();
+
   return (
     <PagePlaceholder
-      title="Expenses"
-      description="Monitor, track, and manage all property-related expenses."
+      title={t('pages.expenses')}
+      description={t('navbar.expenses')}
     />
   );
 }

@@ -1,64 +1,43 @@
+import { useTranslation } from 'react-i18next';
 import styles from './HomePage.module.css';
 
 export function HomePage() {
+  const { t } = useTranslation();
+
+  const features = [
+    { icon: '👥', key: 'landlords' },
+    { icon: '🏢', key: 'apartments' },
+    { icon: '🚗', key: 'parking' },
+    { icon: '🐾', key: 'pets' },
+    { icon: '🔧', key: 'maintenance' },
+    { icon: '💰', key: 'expenses' },
+    { icon: '📋', key: 'specialAssessments' },
+  ];
+
   return (
     <div className={styles.container}>
       <section className={styles.hero}>
-        <h1 className={styles.title}>Welcome to Palma Real</h1>
+        <h1 className={styles.title}>{t('home.title')}</h1>
         <p className={styles.subtitle}>
-          Property Management System for Landlords, Apartments, and Tenants
+          {t('home.subtitle')}
         </p>
       </section>
 
       <section className={styles.features}>
         <div className={styles.grid}>
-          <div className={styles.card}>
-            <div className={styles.icon}>👥</div>
-            <h2>Landlords</h2>
-            <p>Manage your landlord information and profiles</p>
-          </div>
-
-          <div className={styles.card}>
-            <div className={styles.icon}>🏢</div>
-            <h2>Apartments</h2>
-            <p>Handle apartment listings and property details</p>
-          </div>
-
-          <div className={styles.card}>
-            <div className={styles.icon}>🚗</div>
-            <h2>Parking</h2>
-            <p>Manage parking spaces and assignments</p>
-          </div>
-
-          <div className={styles.card}>
-            <div className={styles.icon}>🐾</div>
-            <h2>Pets</h2>
-            <p>Track pet policies and tenant pets</p>
-          </div>
-
-          <div className={styles.card}>
-            <div className={styles.icon}>🔧</div>
-            <h2>Maintenance</h2>
-            <p>Schedule and track maintenance requests</p>
-          </div>
-
-          <div className={styles.card}>
-            <div className={styles.icon}>💰</div>
-            <h2>Expenses</h2>
-            <p>Monitor and manage property expenses</p>
-          </div>
-
-          <div className={styles.card}>
-            <div className={styles.icon}>📋</div>
-            <h2>Special Assessments</h2>
-            <p>Track special assessments and fees</p>
-          </div>
+          {features.map((feature) => (
+            <div key={feature.key} className={styles.card}>
+              <div className={styles.icon}>{feature.icon}</div>
+              <h2>{t(`home.features.${feature.key}` as any) || t(`navbar.${feature.key}`)}</h2>
+              <p>{t(`home.features.${feature.key}`)}</p>
+            </div>
+          ))}
         </div>
       </section>
 
       <section className={styles.cta}>
-        <h2>Get Started</h2>
-        <p>Select a section from the navigation menu above to begin managing your properties.</p>
+        <h2>{t('home.getStarted')}</h2>
+        <p>{t('home.getStartedDescription')}</p>
       </section>
     </div>
   );

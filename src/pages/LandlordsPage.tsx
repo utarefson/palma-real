@@ -1,10 +1,13 @@
+import { useTranslation } from 'react-i18next';
 import { PagePlaceholder } from '../components/PagePlaceholder';
 
 export function LandlordsPage() {
+  const { t } = useTranslation();
+
   return (
     <PagePlaceholder
-      title="Landlords"
-      description="Manage landlord information, contact details, and property assignments."
+      title={t('pages.landlords')}
+      description={t('navbar.landlords')}
     />
   );
 }

@@ -1,0 +1,47 @@
+{
+  "navbar": {
+    "home": "Home",
+    "landlords": "Landlords",
+    "apartments": "Apartments",
+    "parking": "Parking",
+    "pets": "Pets",
+    "maintenance": "Maintenance",
+    "expenses": "Expenses",
+    "specialAssessments": "Special Assessments"
+  },
+  "home": {
+    "title": "Welcome to Palma Real",
+    "subtitle": "Property Management System for Landlords, Apartments, and Tenants",
+    "getStarted": "Get Started",
+    "getStartedDescription": "Select a section from the navigation menu above to begin managing your properties.",
+    "features": {
+      "landlords": "Manage your landlord information and profiles",
+      "apartments": "Handle apartment listings and property details",
+      "parking": "Manage parking spaces and assignments",
+      "pets": "Track pet policies and tenant pets",
+      "maintenance": "Schedule and track maintenance requests",
+      "expenses": "Monitor and manage property expenses",
+      "specialAssessments": "Track special assessments and fees"
+    }
+  },
+  "pages": {
+    "landlords": "Landlords",
+    "apartments": "Apartments",
+    "parking": "Parking",
+    "pets": "Pets",
+    "maintenance": "Maintenance",
+    "expenses": "Expenses",
+    "specialAssessments": "Special Assessments",
+    "underConstruction": "This page is under construction."
+  },
+  "calculator": {
+    "title": "Waterproofing and Exterior Painting of Palma Real",
+    "label": "Apartment Square Meters",
+    "placeholder": "Enter the surface in m²",
+    "resultLabel": "Special Assessment:",
+    "resultInfo": "Calculated amount for {{area}} m² of surface."
+  },
+  "footer": {
+    "copyright": "© {{year}} Palma Real. All rights reserved."
+  }
+}
