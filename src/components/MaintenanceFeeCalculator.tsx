@@ -25,7 +25,7 @@ export function MaintenanceFeeCalculator() {
 
   return (
     <div className={styles.container}>
-      <div style={{ backgroundColor: 'red' }} className={styles.card}>
+      <div className={styles.card}>
         <h2 className={styles.title}>{t('calculator.title')}</h2>
 
         <div className={styles.inputGroup}>

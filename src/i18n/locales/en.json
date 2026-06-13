@@ -41,6 +41,16 @@
     "resultLabel": "Special Assessment:",
     "resultInfo": "Calculated amount for {{area}} m² of surface."
   },
+  "expensesCalculator": {
+    "title": "Expenses Calculator",
+    "areaLabel": "Apartment Square Meters",
+    "areaPlaceholder": "Enter the surface in m²",
+    "occupantsLabel": "Number of Occupants",
+    "occupantsPlaceholder": "Enter the number of occupants",
+    "staticCost": "Service Maintenance Cost:",
+    "dynamicCost": "Water Consumption Cost:",
+    "totalCost": "Total Monthly Expenses:"
+  },
   "footer": {
     "copyright": "© {{year}} Palma Real. All rights reserved."
   }

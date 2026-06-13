@@ -6,7 +6,7 @@
     "parking": "Estacionamiento",
     "pets": "Mascotas",
     "maintenance": "Mantenimiento",
-    "expenses": "Gastos",
+    "expenses": "Expensas",
     "specialAssessments": "Cuotas"
   },
   "home": {
@@ -20,7 +20,7 @@
       "parking": "Gestiona espacios de estacionamiento y asignaciones",
       "pets": "Realiza seguimiento de políticas de mascotas e inquilinos",
       "maintenance": "Programa y realiza seguimiento de solicitudes de mantenimiento",
-      "expenses": "Monitorea y gestiona los gastos de la propiedad",
+      "expenses": "Monitorea y gestiona las expensas de la propiedad",
       "specialAssessments": "Realiza seguimiento de cuotas extraordinarias y tarifas"
     }
   },
@@ -30,7 +30,7 @@
     "parking": "Estacionamiento",
     "pets": "Mascotas",
     "maintenance": "Mantenimiento",
-    "expenses": "Gastos",
+    "expenses": "Expensas",
     "specialAssessments": "Cuotas Extraordinarias",
     "underConstruction": "Esta página está en construcción."
   },
@@ -40,6 +40,16 @@
     "placeholder": "Ingrese la superficie en m²",
     "resultLabel": "Cuota Extraordinaria:",
     "resultInfo": "Monto calculado para {{area}} m² de superficie."
+  },
+  "expensesCalculator": {
+    "title": "Calculadora de Expensas",
+    "areaLabel": "Metros Cuadrados del Departamento",
+    "areaPlaceholder": "Ingrese la superficie en m²",
+    "occupantsLabel": "Número de Ocupantes",
+    "occupantsPlaceholder": "Ingrese el número de ocupantes",
+    "staticCost": "Costo de Mantenimiento de Servicio:",
+    "dynamicCost": "Costo de Consumo de Agua:",
+    "totalCost": "Total de Expensas Mensuales:"
   },
   "footer": {
     "copyright": "© {{year}} Palma Real. Todos los derechos reservados."
