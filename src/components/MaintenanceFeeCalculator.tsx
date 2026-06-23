@@ -5,6 +5,7 @@ import styles from './MaintenanceFeeCalculator.module.css';
 export function MaintenanceFeeCalculator() {
   const { t } = useTranslation();
   const TOTAL_BUILT_UP_AREA = parseFloat(import.meta.env.VITE_TOTAL_BUILT_UP_AREA || '10000');
+  const TOTAL_COMMERCIAL_AREA = parseFloat(import.meta.env.VITE_TOTAL_COMMERCIAL_AREA || '100');
   const PAINTING_PRICE = parseFloat(import.meta.env.VITE_PAINTING_PRICE || '300000');
 
   const [area, setArea] = useState('');
@@ -19,7 +20,7 @@ export function MaintenanceFeeCalculator() {
       setResult(null);
       return;
     }
-    const fee = areaValue * PAINTING_PRICE / TOTAL_BUILT_UP_AREA;
+    const fee = areaValue * PAINTING_PRICE / (TOTAL_BUILT_UP_AREA + TOTAL_COMMERCIAL_AREA);
     setResult(fee);
   };
 
